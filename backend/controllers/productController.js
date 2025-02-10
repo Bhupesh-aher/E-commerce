@@ -22,7 +22,6 @@ const addProduct = async(req, res) => {
 
         )
 
-        console.log(sizes);
         
         const productData = {
             name,
@@ -36,7 +35,6 @@ const addProduct = async(req, res) => {
             date: Date.now()
         }
 
-        console.log(productData);
 
         const product = new productModel(productData)
         await product.save();
