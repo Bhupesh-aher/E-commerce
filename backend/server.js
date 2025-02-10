@@ -3,6 +3,7 @@ import cors from 'cors'
 import 'dotenv/config'
 import connectDB from "./config/mongodb.js";
 import connectCloudinary from "./config/cloudinary.js";
+import userRouter from "./routes/userRoute.js";
 
 
 // App Config
@@ -18,6 +19,10 @@ app.use(cors())
 
 
 // api endpoints
+app.use('/api/user', userRouter)
+
+
+
 
 app.get('/', (req, res) => {
     res.send('API Working')
@@ -32,6 +37,7 @@ connectDB().then(() => {
     })
 })
 .catch(() => {
+    console.log("server cannot be connected!");
     
     
 })
