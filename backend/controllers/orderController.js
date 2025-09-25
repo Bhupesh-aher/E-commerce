@@ -23,7 +23,7 @@ const placeOrder = async (req, res) => {
             items,
             address,
             amount,
-            paymentMethod: 'COD',
+            paymentMethod: "COD",
             payment: false,
             date: Date.now()
         }
@@ -106,7 +106,7 @@ const verifyStripe = async(req, res) => {
     const {orderId, success, userId} = req.body;
     
     try{
-        if(success === 'true'){
+        if(success === "true"){
             await orderModel.findByIdAndUpdate(orderId, {payment:true})
             await userModel.findByIdAndUpdate(userId, {cartData: {}})
             res.json({success:true})
