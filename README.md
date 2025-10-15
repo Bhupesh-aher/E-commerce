@@ -35,14 +35,23 @@ Customers can browse fashion collections, add items to their cart, and checkout 
 ## ⚙️ **Core Features**
 
 ✅ **User Authentication** — Secure signup/login using JWT
+
 ✅ **Product Catalog** — Browse latest, top-rated, and best-selling clothing items
+
 ✅ **Shopping Cart** — Add, remove, and modify cart items in real-time
+
 ✅ **Stripe Payment Integration** — End-to-end secure payments with success tracking
+
 ✅ **Order History** — Users can view their past orders with status updates
+
 ✅ **Cloudinary Integration** — Optimized media upload for products
+
 ✅ **Admin Dashboard** — Manage products, orders, and users
+
 ✅ **Responsive UI** — Fully optimized for desktop, tablet, and mobile
+
 ✅ **Global State Management** — Centralized control via Redux Toolkit
+
 ✅ **Scalable Modular Codebase** — Easy to extend for coupons, wishlists, etc.
 
 ---
